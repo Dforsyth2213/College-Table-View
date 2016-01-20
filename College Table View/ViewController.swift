@@ -12,12 +12,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
  {
     @IBOutlet weak var tableView: UITableView!
     
-    var colleges : [College] = []
+    var colleges = ["Arkansas", "Illinois", "LSU"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+}
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return colleges.count
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath)
+        cell.textLabel?.text = colleges[indexPath.row].name
+        return cell
+}
+    
 }
 
-}
