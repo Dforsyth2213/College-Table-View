@@ -41,6 +41,9 @@
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <segue destination="G1W-uZ-lKZ" kind="show" id="uZe-bo-FGy"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
