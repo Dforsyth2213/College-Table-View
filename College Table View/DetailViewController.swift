@@ -23,14 +23,10 @@ class DetailViewController: UIViewController {
         stateTextField.text = college.state
         populationTextField.text = String(college.population)
         imageView.image = college.image
-
     }
     @IBAction func onTappedSaveButton(sender: AnyObject) {
         college.name = collegeTextField.text!
         college.state = stateTextField.text!
         college.population = Int(populationTextField.text!)!
     }
-
-
-   
 }
