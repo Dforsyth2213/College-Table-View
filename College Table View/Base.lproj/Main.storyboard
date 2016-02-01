@@ -95,13 +95,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Eq-9J-7Cl">
-                                <rect key="frame" x="225" y="118" width="150" height="30"/>
+                                <rect key="frame" x="225" y="83" width="150" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4hI-Gb-v5g">
-                                <rect key="frame" x="225" y="164" width="150" height="30"/>
+                                <rect key="frame" x="225" y="129" width="150" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -124,18 +124,31 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Population" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rav-Ow-PUh">
-                                <rect key="frame" x="225" y="208" width="150" height="30"/>
+                                <rect key="frame" x="225" y="175" width="150" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="WebPage" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kjs-pc-wyj">
+                                <rect key="frame" x="225" y="218" width="150" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msm-7I-Ela">
+                                <rect key="frame" x="392" y="218" width="107" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Go to Webpage"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="kjs-pc-wyj" firstAttribute="centerX" secondItem="uCF-0c-jtf" secondAttribute="centerX" id="674-t6-N3U"/>
                             <constraint firstItem="mNh-fd-bLB" firstAttribute="centerX" secondItem="uCF-0c-jtf" secondAttribute="centerX" id="9dG-9n-rUz"/>
                             <constraint firstItem="Rav-Ow-PUh" firstAttribute="centerX" secondItem="uCF-0c-jtf" secondAttribute="centerX" id="9lS-rf-mLc"/>
                             <constraint firstItem="isf-Yz-FCF" firstAttribute="centerX" secondItem="uCF-0c-jtf" secondAttribute="centerX" id="PGB-on-y2Y"/>
+                            <constraint firstItem="Msm-7I-Ela" firstAttribute="leading" secondItem="kjs-pc-wyj" secondAttribute="trailing" constant="10" id="Umb-4F-clt"/>
                             <constraint firstItem="4hI-Gb-v5g" firstAttribute="centerX" secondItem="uCF-0c-jtf" secondAttribute="centerX" id="lZO-0n-Mql"/>
                             <constraint firstItem="6Eq-9J-7Cl" firstAttribute="centerX" secondItem="uCF-0c-jtf" secondAttribute="centerX" id="ztk-Sd-c0E"/>
                         </constraints>
