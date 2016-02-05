@@ -106,15 +106,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isf-Yz-FCF">
-                                <rect key="frame" x="271" y="428" width="59" height="45"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="onTappedSaveButton:" destination="G1W-uZ-lKZ" eventType="touchUpInside" id="Oqv-wP-h6e"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mNh-fd-bLB">
                                 <rect key="frame" x="180" y="266" width="240" height="128"/>
                                 <animations/>
@@ -133,12 +124,40 @@
                                 <rect key="frame" x="225" y="218" width="150" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msm-7I-Ela">
-                                <rect key="frame" x="392" y="218" width="107" height="30"/>
+                                <rect key="frame" x="431" y="218" width="30" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Go to Webpage"/>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="goToWebSite:" destination="G1W-uZ-lKZ" eventType="touchUpInside" id="JTx-UG-whm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sex-Jj-1a2">
+                                <rect key="frame" x="427" y="276" width="54" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="onCameraButtonTapped:" destination="G1W-uZ-lKZ" eventType="touchUpInside" id="RSw-gE-rue"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAg-yL-A0Y">
+                                <rect key="frame" x="430" y="330" width="48" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Library"/>
+                                <connections>
+                                    <action selector="onLibraryButtonTapped:" destination="G1W-uZ-lKZ" eventType="touchUpInside" id="yOk-X4-sk0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isf-Yz-FCF">
+                                <rect key="frame" x="271" y="415" width="59" height="45"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="onTappedSaveButton:" destination="G1W-uZ-lKZ" eventType="touchUpInside" id="Oqv-wP-h6e"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -150,6 +169,8 @@
                             <constraint firstItem="isf-Yz-FCF" firstAttribute="centerX" secondItem="uCF-0c-jtf" secondAttribute="centerX" id="PGB-on-y2Y"/>
                             <constraint firstItem="Msm-7I-Ela" firstAttribute="leading" secondItem="kjs-pc-wyj" secondAttribute="trailing" constant="10" id="Umb-4F-clt"/>
                             <constraint firstItem="4hI-Gb-v5g" firstAttribute="centerX" secondItem="uCF-0c-jtf" secondAttribute="centerX" id="lZO-0n-Mql"/>
+                            <constraint firstItem="NAg-yL-A0Y" firstAttribute="leading" secondItem="mNh-fd-bLB" secondAttribute="trailing" constant="7" id="nLd-oF-GX4"/>
+                            <constraint firstItem="sex-Jj-1a2" firstAttribute="leading" secondItem="mNh-fd-bLB" secondAttribute="trailing" constant="7" id="siN-tM-i0c"/>
                             <constraint firstItem="6Eq-9J-7Cl" firstAttribute="centerX" secondItem="uCF-0c-jtf" secondAttribute="centerX" id="ztk-Sd-c0E"/>
                         </constraints>
                     </view>
@@ -158,6 +179,7 @@
                         <outlet property="imageView" destination="mNh-fd-bLB" id="bLg-kS-oHn"/>
                         <outlet property="populationTextField" destination="Rav-Ow-PUh" id="xAI-9l-Xbc"/>
                         <outlet property="stateTextField" destination="4hI-Gb-v5g" id="cki-NU-66l"/>
+                        <outlet property="webPageTextField" destination="kjs-pc-wyj" id="DOd-l5-nsS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8N0-8F-UVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
