@@ -19,9 +19,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         editButton.tag = 0
         
-        colleges.append(College(name: "University of Arkansas", state: "Arkansas", population: 26301, image: UIImage(named: "arkansas")!, webpage: "http://www.arkansasrazorbacks.com/"))
-        colleges.append(College(name: "LSU", state: "Louisana", population: 30451, image: UIImage(named: "LSU")!, webpage: "http://www.lsu.edu/"))
-        colleges.append(College(name: "University of Illinois", state: "Illinois", population: 44087, image: UIImage(named: "Illinois")!, webpage: "http://illinois.edu/"))
+        colleges.append(College(name: "University of Arkansas", state: "Arkansas", population: 26301, image: UIImage(named: "arkansas")!, webpage: "http://www.arkansasrazorbacks.com/", location: "University of Arkansas" ))
+        colleges.append(College(name: "LSU", state: "Louisana", population: 30451, image: UIImage(named: "LSU")!, webpage: "http://www.lsu.edu/", location: "Louisana state University"))
+        colleges.append(College(name: "University of Illinois", state: "Illinois", population: 44087, image: UIImage(named: "Illinois")!, webpage: "http://illinois.edu/", location: "University of Illinois"))
         
     }
     

@@ -14,14 +14,16 @@ class College: NSObject {
     var population = 0
     var webpage = ""
     var image = UIImage(named: "Default")
+    var location = ""
     
-    convenience init(name: String, state: String, population: Int, image: UIImage, webpage: String) {
+    convenience init(name: String, state: String, population: Int, image: UIImage, webpage: String, location: String) {
         self.init()
         self.name = name
         self.state = state
         self.population = population
         self.image = image
         self.webpage = webpage
+        self.location = location
     }
     
     convenience init(name: String) {

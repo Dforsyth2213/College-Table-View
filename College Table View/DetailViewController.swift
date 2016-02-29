@@ -18,15 +18,18 @@ class DetailViewController: UIViewController, SFSafariViewControllerDelegate, UI
     @IBOutlet weak var webPageTextField: UITextField!
     let imagePicker = UIImagePickerController()
     var college: College!
+    var location = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         imagePicker.delegate = self
         collegeTextField.text = college.name
         stateTextField.text = college.state
         populationTextField.text = String(college.population)
         imageView.image = college.image
         webPageTextField.text = college.webpage
+        location = college.name
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
@@ -65,4 +68,11 @@ class DetailViewController: UIViewController, SFSafariViewControllerDelegate, UI
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
         presentViewController(imagePicker, animated: true, completion: nil)
     }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        let dvc = segue.destinationViewController as! MapViewController
+        dvc.location = self.location
+    }
+    
+    
 }

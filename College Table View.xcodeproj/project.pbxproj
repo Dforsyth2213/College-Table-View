@@ -16,6 +16,7 @@
 		3FCC18E61C4FFF23004C2F34 /* College_Table_ViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC18E51C4FFF23004C2F34 /* College_Table_ViewUITests.swift */; };
 		3FCC18F41C56A040004C2F34 /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC18F31C56A040004C2F34 /* College.swift */; settings = {ASSET_TAGS = (); }; };
 		3FCC18F61C57F00F004C2F34 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC18F51C57F00F004C2F34 /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3FE4E8641C7F7B43002DC0C1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE4E8631C7F7B43002DC0C1 /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3FCC18E71C4FFF23004C2F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FCC18F31C56A040004C2F34 /* College.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
 		3FCC18F51C57F00F004C2F34 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3FE4E8631C7F7B43002DC0C1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				3FCC18C71C4FFF22004C2F34 /* ViewController.swift */,
 				3FCC18F51C57F00F004C2F34 /* DetailViewController.swift */,
 				3FCC18F31C56A040004C2F34 /* College.swift */,
+				3FE4E8631C7F7B43002DC0C1 /* MapViewController.swift */,
 				3FCC18C91C4FFF22004C2F34 /* Main.storyboard */,
 				3FCC18CC1C4FFF22004C2F34 /* Assets.xcassets */,
 				3FCC18CE1C4FFF22004C2F34 /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 				3FCC18C81C4FFF22004C2F34 /* ViewController.swift in Sources */,
 				3FCC18C61C4FFF22004C2F34 /* AppDelegate.swift in Sources */,
 				3FCC18F41C56A040004C2F34 /* College.swift in Sources */,
+				3FE4E8641C7F7B43002DC0C1 /* MapViewController.swift in Sources */,
 				3FCC18F61C57F00F004C2F34 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
